@@ -110,7 +110,7 @@ void recc (bike *a,int k, int size){ //전체 정류소 정보를 담은 구조�
     
     printf("가장 가까운 추천 정류장 : %d \n", min); // 최종적으로 선정된 정류장 출력
     
-    printf("거리 : %d \n",k); // 그 최단거리를 출력 : 그냥 보여주기용.. 단위도 안맞음
+    //printf("거리 : %d \n",k); // 그 최단거리를 출력 : 그냥 보여주기용.. 단위도 안맞음
     
 }
 
@@ -160,11 +160,11 @@ int main(int argc, const char * argv[]) {
     
     printf("%d시 %d 정류장의 밀집도는 %lf 입니다. \n", time, numb, d); // 밀집도 출력
     
-    if (d>Threshold){ // 정류소에 자전거가 많으면
+    if (d<Threshold){ // 정류소에 자전거가 없으면
       
         printf("추천 정류장은 : %d \n",numb);} // 사용자가 입력한 정류소 추천
         
-        if (d<=Threshold){ // 만약 밀집도가 임계값보다 작으면, 즉 대여소에 자전거가 없을 확률이 크면
+        if (d>=Threshold){ // 만약 밀집도가 임계값보다 크면, 즉 대여소에 자전거가 없을 확률이 크면
     
             recc(arr, k, size); // 근처 다른 정류소 추천 (네번째 함수 이용)
         }
