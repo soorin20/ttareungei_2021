@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul bicycle recommendation system </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div class='header-box'>
+        <h1 class='header_title'>따릉이 자전거 추천 대여소 시스템</h1>
+        <p class='header_explain'>내가 도착만 하면 거치대가 항상 왜 꽉 차있지? </br>
+        내가 가려고 하는 정류소가 꽉 차있는지 아닌지 먼저 확인할 수는 없을까? </p>
+   </div>
+
+   <div class='main-box'>
+        <div class='input-box'>
+            <label for="station_num"> Put Station number! </label></br>
+            <input type ="number" id="station_num" required></br>
+            <label for="t"> Put time you want to ride Bicycle! </label></br>
+            <input type ="number" id="t" required></br>
+            <input type="button" value="Send Request" onclick="alert('code')">
+        </div>
+        <div class='output-box'>
+            <div>
+            <div id="map" style="width:500px;height:400px;"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=65a8014b79e04f73bc385d16d30772b7"></script>
+            <script>
+		        var container = document.getElementById('map');
+		        var options = {
+			            center: new kakao.maps.LatLng(33.450701, 126.570667),
+			            level: 3
+		            };
+
+		        var map = new kakao.maps.Map(container, options);
+	        </script>
+        </div>
+   </div>
+
+
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
