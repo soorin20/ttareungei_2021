@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="informandbutton">
+      <div id="information">
+        <span id="stationname"></span><br />
+        <span id="parkingbiketotcnt"></span><br />
+        <span id="racktotcnt"></span><br />
+        <span id="shared"></span><br />
+        <span id="statonid"></span><br />
+        <span id="latitude"></span><br />
+        <span id="longitude"></span><br />
+      </div>
+    </div>
+    <form id="inputplace">
+      <input
+        id="destination"
+        type="text"
+        required
+        placeholder="Select Destination"
+      />
+      <button id="submitbutton">Submit</button>
+    </form>
+    <div id="mapandbutton">
+      <div id="map" style="width: 800px; height: 450px"></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=def6562b553527ca1b59aef9620ef704"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

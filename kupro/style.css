@@ -1,0 +1,153 @@
+body {
+  text-align: center;
+  margin-top: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inputplace {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+#inputplace > input {
+  font-size: 200%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: gray;
+  border-color: gray;
+  opacity: 0.5;
+}
+
+#inputplace > input:hover {
+  color: black;
+  border-color: black;
+  opacity: 1;
+}
+
+#inputplace > button {
+  font-size: 200%;
+  border: none;
+  background: none;
+  color: gray;
+  border-color: gray;
+  opacity: 0.5;
+}
+
+#inputplace > button:hover {
+  color: black;
+  border-color: black;
+  opacity: 1;
+}
+
+#informandbutton > button {
+  background: none;
+  color: black;
+  border-color: black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
+#informbutton:hover {
+  color: gray;
+  border-color: gray;
+  opacity: 0.5;
+}
+
+#informbutton:hover + #information {
+  opacity: 1;
+}
+
+#information {
+  text-align: left;
+  width: 800px;
+  height: 147px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: fadein 2s;
+  opacity: 0;
+  margin-bottom: 30px;
+}
+
+#map {
+  border-radius: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: fadein 2s;
+}
+
+#mapbutton {
+  background: none;
+  color: black;
+  border-color: black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
+.contentbox {
+  text-align: left;
+}
+
+.desc {
+  background-color: rgba(250, 235, 208, 0.938);
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.active {
+  display: none;
+}
+
+.red {
+  background-color: red;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.plum {
+  background-color: plum;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+.white {
+  background-color: white;
+}
+
+.contentbox {
+  border-radius: 5px;
+  margin-bottom: 45px;
+  font-size: small;
+}
